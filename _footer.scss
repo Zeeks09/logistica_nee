@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: $accent-color;
+    color: $text-color;
+    font-size: 0.9rem;
+    border-top: 2px solid $border-color;
+    background-image: url('./nqn-limay.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeIn $animation-duration $animation-ease forwards;
+  
+    &:hover {
+      animation: zoomIn 0.5s $animation-ease forwards;
+    }
+  }
