@@ -1,8 +1,8 @@
-@import 'global';
+@use 'global';
 
 .form-section {
   padding: 20px;
-  background-color: $form-bg-color;
+  background-color: global.$form-bg-color;
   border-radius: 8px;
   margin-top: 20px;
 }
@@ -15,18 +15,18 @@ form {
 form input, form textarea, form button {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid $border-color;
-  background-color: $navbar-bg-color;
-  color: $text-color;
+  border: 1px solid global.$border-color;
+  background-color: global.$navbar-bg-color;
+  color: global.$text-color;
 }
 
 form button {
   cursor: pointer;
-  background-color: $primary-button-color;
+  background-color: global.$primary-button-color;
   border: none;
   transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: $primary-button-hover-color;
+  background-color: global.$primary-button-hover-color;
 }
