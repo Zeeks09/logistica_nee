@@ -1,0 +1,12 @@
+body {
+  background-color: #534D85;
+  color: #A9A59F;
+  font-family: 'Helios', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #A9A59F;
+  text-align: center;
+}
