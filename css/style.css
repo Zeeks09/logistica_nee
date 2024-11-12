@@ -1,17 +1,139 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import 'global';
- *   |         ^^^^^^^^
- *   '
- *   scss/style.scss 1:9  root stylesheet */
+body {
+  background-color: #534D85;
+  color: #A9A59F;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import 'global';\a   \2502          ^^^^^^^^\a   \2575 \a   scss/style.scss 1:9  root stylesheet";
+h1, h2 {
+  color: #A9A59F;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #413973;
+  color: #A9A59F;
+  border-top: 2px solid #6D65A6;
+}
+
+.form-section {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #6D65A6;
+  background-color: #413973;
+  color: #A9A59F;
+}
+
+form button {
+  cursor: pointer;
+  background-color: #6D65A6;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #5c4f96;
+}
+
+.header {
+  padding: 50px;
+  text-align: center;
+  background-color: #413973;
+  border-bottom: 2px solid #6D65A6;
+  color: #A9A59F;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: #413973;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #909292;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #A9A59F;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.whatsapp-button:hover {
+  background-color: #20B955;
+}
+
+.whatsapp-button img {
+  width: 60%;
+  height: 60%;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
