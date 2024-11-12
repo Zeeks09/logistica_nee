@@ -1,0 +1,20 @@
+@use '../utilities/variables';
+
+.form-section {
+  background-color: variables.$form-bg-color;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: variables.$navbar-bg-color;
+  color: variables.$text-color;
+  border: 1px solid variables.$border-color;
+}

@@ -1,0 +1,12 @@
+@use '../utilities/variables';
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section {
+    padding: 10px;
+  }
+}

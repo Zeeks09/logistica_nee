@@ -1,0 +1,8 @@
+@use '../utilities/variables';
+
+footer {
+  background-color: variables.$navbar-bg-color;
+  color: variables.$text-color;
+  text-align: center;
+  padding: 15px;
+}
