@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>N&E Logistica</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&E Logistica</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="header">
-    <h1>N&E Logistica</h1>
-    <img src="images/imagen1.jpg" alt="Imagen 1">
-  </header>
+<header class="header">
+    <nav class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#about">Nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+</header>
 
-  <nav class="navbar">
-    <a href="#servicios">Servicios</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <main class="main-content">
-    <section id="servicios">
-      <h2>Servicios</h2>
-      <p>Ofrecemos servicios de logística...</p>
+<main>
+    <section id="home">
+        <h1>Bienvenidos a N&E Logistica</h1>
+        <img src="images/imagen1.jpg" alt="Imagen de inicio">
     </section>
-    <section id="nosotros">
-      <h2>Sobre Nosotros</h2>
-      <p>Brindamos servicios de calidad...</p>
+    <section id="services">
+        <h2>Servicios</h2>
+        <p>Ofrecemos servicios de logística...</p>
     </section>
-  </main>
+</main>
 
-  <section id="contacto" class="form-section">
+<section id="contact" class="form-section">
     <h3>Contacto</h3>
     <form>
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Mensaje" rows="4" required></textarea>
-      <button type="submit" class="button">Enviar</button>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="button">Enviar</button>
     </form>
-  </section>
+</section>
 
-  <footer>
+<footer>
     <p>&copy; 2024 N&E Logistica</p>
-    <a href="https://github.com/tu-usuario/logistica-ne">GitHub</a>
-  </footer>
+</footer>
 
-  <div class="whatsapp-button">
+<div class="whatsapp-button">
     <a href="https://wa.me/1234567890" target="_blank"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
-  </div>
+</div>
+
 </body>
 </html>
