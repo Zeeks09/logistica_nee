@@ -1,18 +1,16 @@
-/* Estilos globales */
 body {
-  background-color: #534D85;
-  color: #A9A59F;
+  background-color: #534d85;
+  color: #a9a59f;
   font-family: 'Helios', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Tipografía */
 h1 {
   font-family: 'Helios', sans-serif;
   font-weight: 700;
   font-size: 2.2rem;
-  color: #A9A59F;
+  color: #a9a59f;
   text-align: center;
 }
 
@@ -25,7 +23,7 @@ h1 {
 h2 {
   font-family: 'Helios', sans-serif;
   font-weight: 700;
-  color: #A9A59F;
+  color: #a9a59f;
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
@@ -37,13 +35,12 @@ h2 {
 }
 
 p {
-  color: #A9A59F;
+  color: #a9a59f;
   font-size: 1rem;
   line-height: 1.6;
   margin: 10px 0;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: flex-start;
@@ -60,11 +57,11 @@ p {
   font-weight: bold;
   padding: 8px 15px;
   border-radius: 5px;
-  transition: color 0.5s ease;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #A9A59F;
+  color: #a9a59f;
 }
 
 @media (max-width: 768px) {
@@ -74,15 +71,20 @@ p {
   }
 }
 
-/* Header */
 .header {
   padding: 50px;
   text-align: center;
-  background-color: #534D85;
-  border-bottom: 2px solid #6D65A6;
+  background-color: #413973;
+  border-bottom: 2px solid #6d65a6;
+  color: #a9a59f;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-/* Main Content con CSS Grid */
+.header:hover {
+  animation: zoomIn 0.5s ease-in-out forwards;
+}
+
 .main-content {
   display: grid;
   grid-template-columns: 1fr;
@@ -93,7 +95,6 @@ p {
   text-align: center;
 }
 
-/* Sección del formulario */
 .form-section {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -103,12 +104,11 @@ p {
 }
 
 .form-section h3 {
-  color: #A9A59F;
+  color: #a9a59f;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-/* Estilos del formulario */
 form {
   display: grid;
   gap: 15px;
@@ -122,29 +122,90 @@ form label {
 form input {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #6D65A6;
+  border: 1px solid #6d65a6;
   background-color: #413973;
-  color: #A9A59F;
+  color: #a9a59f;
 }
 
 form input::placeholder {
-  color: #C9C9C9;
+  color: #c9c9c9;
 }
 
-/* Sección Google Maps */
-iframe {
-  width: 100%;
-  height: 300px;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-/* Footer (si es necesario agregar uno en el futuro) */
 footer {
   text-align: center;
   padding: 15px;
   background-color: #413973;
-  color: #A9A59F;
+  color: #a9a59f;
   font-size: 0.9rem;
-  border-top: 2px solid #6D65A6;
+  border-top: 2px solid #6d65a6;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+footer:hover {
+  animation: zoomIn 0.5s ease-in-out forwards;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.whatsapp-button:hover {
+  background-color: #20b955;
+}
+
+.whatsapp-button img {
+  width: 60%;
+  height: 60%;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
