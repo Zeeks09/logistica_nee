@@ -1,15 +1,13 @@
-@use 'variables';
-
 .navbar {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  background-color: variables.$accent-color;
+  background-color: #413973;
   padding: 10px 20px;
   margin-top: 10px;
 
   a {
-    color: variables.$link-hover-color;
+    color: #909292;
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
@@ -18,7 +16,7 @@
     transition: color 0.3s ease;
 
     &:hover {
-      color: variables.$text-color;
+      color: #A9A59F;
     }
   }
 

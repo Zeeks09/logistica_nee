@@ -1,16 +1,15 @@
-@use 'variables';
 @use 'animations';
 
 .header {
   padding: 50px;
   text-align: center;
-  background-color: variables.$accent-color;
-  border-bottom: 2px solid variables.$border-color;
-  color: variables.$text-color;
+  background-color: #413973;
+  border-bottom: 2px solid #6D65A6;
+  color: #A9A59F;
   opacity: 0;
-  animation: fadeIn #{variables.$animation-duration} #{variables.$animation-ease} forwards;
+  animation: fadeIn 1.5s ease-in-out forwards;
 
   &:hover {
-    animation: zoomIn 0.5s #{variables.$animation-ease} forwards;
+    animation: zoomIn 0.5s ease-in-out forwards;
   }
 }

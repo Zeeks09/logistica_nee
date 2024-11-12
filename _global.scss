@@ -1,8 +1,6 @@
-@use 'variables';
-
 body {
-  background-color: variables.$background-color;
-  color: variables.$text-color;
+  background-color: #534D85;
+  color: #A9A59F;
   font-family: 'Helios', sans-serif;
   margin: 0;
   padding: 0;
@@ -12,7 +10,7 @@ h1 {
   font-family: 'Helios', sans-serif;
   font-weight: 700;
   font-size: 2.2rem;
-  color: variables.$text-color;
+  color: #A9A59F;
   text-align: center;
 
   @media (max-width: 768px) {
@@ -23,7 +21,7 @@ h1 {
 h2 {
   font-family: 'Helios', sans-serif;
   font-weight: 700;
-  color: variables.$text-color;
+  color: #A9A59F;
   font-size: 1.8rem;
   margin-bottom: 10px;
 
@@ -33,7 +31,7 @@ h2 {
 }
 
 p {
-  color: variables.$text-color;
+  color: #A9A59F;
   font-size: 1rem;
   line-height: 1.6;
   margin: 10px 0;
