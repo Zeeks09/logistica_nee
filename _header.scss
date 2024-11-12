@@ -4,16 +4,13 @@
 .header {
   padding: 50px;
   text-align: center;
-  background-color: variables.$background-color;
+  background-color: variables.$accent-color;
   border-bottom: 2px solid variables.$border-color;
-  background-image: url('./lg.jpg');
-  background-size: cover;
-  background-position: center;
   color: variables.$text-color;
   opacity: 0;
-  animation: animations.fadeIn variables.$animation-duration variables.$animation-ease forwards;
+  animation: fadeIn #{variables.$animation-duration} #{variables.$animation-ease} forwards;
 
-  .:hover:hover {
-    animation: animations.zoomIn 0.5s variables.$animation-ease forwards;
+  &:hover {
+    animation: zoomIn 0.5s #{variables.$animation-ease} forwards;
   }
 }

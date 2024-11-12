@@ -1,32 +1,35 @@
+@use 'variables';
+@use 'animations';
+
 .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: $whatsapp-size;
-    height: $whatsapp-size;
-    background-color: $whatsapp-color;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    animation: bounce 2s infinite;
-  
-    &:hover {
-      background-color: $whatsapp-hover-color;
-    }
-  
-    img {
-      width: 60%;
-      height: 60%;
-    }
-  
-    @media (max-width: 768px) {
-      width: 50px;
-      height: 50px;
-      bottom: 15px;
-      right: 15px;
-    }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: variables.$whatsapp-size;
+  height: variables.$whatsapp-size;
+  background-color: variables.$whatsapp-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: bounce 2s infinite;
+
+  &:hover {
+    background-color: variables.$whatsapp-hover-color;
   }
+
+  img {
+    width: 60%;
+    height: 60%;
+  }
+
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
