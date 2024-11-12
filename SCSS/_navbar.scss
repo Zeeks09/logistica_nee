@@ -1,19 +1,21 @@
+@import 'global';
+
 .navbar {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  background-color: #413973;
+  background-color: $navbar-bg-color;
   padding: 10px 20px;
 }
 
 .navbar a {
-  color: #909292;
+  color: $text-color;
   text-decoration: none;
   padding: 8px 15px;
   border-radius: 5px;
   transition: color 0.3s ease;
 
   &:hover {
-    color: #A9A59F;
+    color: lighten($text-color, 10%);
   }
 }
