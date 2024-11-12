@@ -1,0 +1,7 @@
+@use '../utilities/variables';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: variables.$primary-color;
+  color: variables.$secondary-color;
+}
