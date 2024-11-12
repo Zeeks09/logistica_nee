@@ -1,14 +1,19 @@
-
 // Variables de colores
 $background-color: #534D85;
 $text-color: #A9A59F;
 $accent-color: #413973;
 $border-color: #6D65A6;
 $link-hover-color: #909292;
-$link-color: #A9A59F;
 $placeholder-color: #C9C9C9;
+$whatsapp-color: #25D366;
+$whatsapp-hover-color: #20B955;
+$whatsapp-size: 60px;
 
-// Estilos globales
+// Variables de animación
+$animation-duration: 1.5s;
+$animation-ease: ease-in-out;
+
+// Estilos Globales
 body {
     background-color: $background-color;
     color: $text-color;
@@ -49,6 +54,36 @@ p {
     margin: 10px 0;
 }
 
+// Animaciones
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
 // Navbar
 .navbar {
     display: flex;
@@ -65,10 +100,10 @@ p {
         font-weight: bold;
         padding: 8px 15px;
         border-radius: 5px;
-        transition: color 0.5s ease;
+        transition: color 0.3s ease;
 
         &:hover {
-            color: $link-color;
+            color: $text-color;
         }
     }
 
@@ -84,9 +119,20 @@ p {
     text-align: center;
     background-color: $background-color;
     border-bottom: 2px solid $border-color;
+
+    background-image: url('./lg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: $text-color;
+    opacity: 0;
+    animation: fadeIn $animation-duration $animation-ease forwards;
+
+    &:hover {
+        animation: zoomIn 0.5s $animation-ease forwards;
+    }
 }
 
-// Main Content con CSS Grid
+// Main Content
 .main-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -143,7 +189,7 @@ iframe {
     margin-top: 20px;
 }
 
-// Footer (si es necesario agregar uno en el futuro)
+// Footer
 footer {
     text-align: center;
     padding: 15px;
@@ -151,4 +197,48 @@ footer {
     color: $text-color;
     font-size: 0.9rem;
     border-top: 2px solid $border-color;
+
+    background-image: url('./nqn-limay.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeIn $animation-duration $animation-ease forwards;
+
+    &:hover {
+        animation: zoomIn 0.5s $animation-ease forwards;
+    }
+}
+
+// Botón de WhatsApp
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: $whatsapp-size;
+    height: $whatsapp-size;
+    background-color: $whatsapp-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: bounce 2s infinite;
+
+    &:hover {
+        background-color: $whatsapp-hover-color;
+    }
+
+    img {
+        width: 60%;
+        height: 60%;
+    }
+
+    @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
 }
