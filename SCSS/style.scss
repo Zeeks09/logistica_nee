@@ -1,8 +1,7 @@
-// Importamos los archivos parciales
-@use 'variables';
-@use 'mixins';
-@use 'reset';
-@use 'header';
-@use 'footer';
-@use 'layout';
-@use 'mediaqueries';
+@use './variables';
+@use './mixins';
+@use './reset';
+@use './header';
+@use './footer';
+@use './layout';
+@use './mediaqueries';
