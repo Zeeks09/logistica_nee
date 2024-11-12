@@ -1,3 +1,16 @@
+body {
+  background-color: #534D85;
+  color: #A9A59F;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #A9A59F;
+  text-align: center;
+}
+
 footer {
   text-align: center;
   padding: 15px;
@@ -18,7 +31,9 @@ form {
   gap: 15px;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #6D65A6;
@@ -34,7 +49,7 @@ form button {
 }
 
 form button:hover {
-  background-color: rgb(86.2222222222, 79.1111111111, 136.8888888889);
+  background-color: #5C4F96;
 }
 
 .header {
@@ -44,6 +59,7 @@ form button:hover {
   border-bottom: 2px solid #6D65A6;
   color: #A9A59F;
 }
+
 .header img {
   max-width: 100%;
   height: auto;
@@ -59,6 +75,7 @@ form button:hover {
     opacity: 1;
   }
 }
+
 .main-content {
   padding: 20px;
   max-width: 800px;
@@ -82,8 +99,9 @@ form button:hover {
   border-radius: 5px;
   transition: color 0.3s ease;
 }
+
 .navbar a:hover {
-  color: rgb(193.0989010989, 190.2197802198, 185.9010989011);
+  color: #CEC9BF;
 }
 
 .whatsapp-button {
@@ -102,9 +120,11 @@ form button:hover {
   transition: background-color 0.3s ease;
   animation: bounce 2s infinite;
 }
+
 .whatsapp-button:hover {
   background-color: #20B955;
 }
+
 .whatsapp-button img {
   width: 60%;
   height: 60%;
@@ -118,5 +138,3 @@ form button:hover {
     transform: translateY(-5px);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
