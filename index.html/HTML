@@ -10,21 +10,23 @@
 
 <header class="header">
     <nav class="navbar">
-        <a href="#home">Inicio</a>
-        <a href="#services">Servicios</a>
-        <a href="#about">Nosotros</a>
-        <a href="#contact">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="Envios.html">Envíos</a>
+        <a href="Mision.html">Misión</a>
+        <a href="Gps.html">GPS</a>
     </nav>
+    <img src="images/lg.jpg" alt="Imagen de encabezado">
 </header>
 
 <main>
     <section id="home">
         <h1>Bienvenidos a N&E Logistica</h1>
-        <img src="images/imagen1.jpg" alt="Imagen de inicio">
+        <img src="images/nqn-limay.jpg" alt="Paisaje del río Limay">
     </section>
     <section id="services">
         <h2>Servicios</h2>
-        <p>Ofrecemos servicios de logística...</p>
+        <p>Ofrecemos servicios de logística personalizados y eficientes.</p>
+        <img src="images/Volcan-Domuyo.jpg.webp" alt="Volcán Domuyo">
     </section>
 </main>
 
@@ -43,7 +45,9 @@
 </footer>
 
 <div class="whatsapp-button">
-    <a href="https://wa.me/1234567890" target="_blank"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
+    <a href="https://wa.me/1234567890" target="_blank">
+        <img src="images/WhatsApp_1.png.webp" alt="WhatsApp">
+    </a>
 </div>
 
 </body>

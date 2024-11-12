@@ -14,13 +14,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
 
-.whatsapp-button:hover {
-  background-color: variables.$button-hover-color;
-}
+  &:hover {
+    background-color: variables.$button-hover-color;
+  }
 
-.whatsapp-button img {
-  width: 60%;
-  height: 60%;
+  img {
+    width: 70%;
+    height: 70%;
+  }
 }

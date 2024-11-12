@@ -2,7 +2,13 @@
 
 .header {
   background-color: variables.$navbar-bg-color;
-  padding: 50px;
   text-align: center;
-  border-bottom: 2px solid variables.$border-color;
+  padding: 20px;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
 }
