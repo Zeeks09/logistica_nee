@@ -1,9 +1,9 @@
-@import 'global';
+@use 'global';
 
 footer {
   text-align: center;
   padding: 15px;
-  background-color: $navbar-bg-color;
-  color: $text-color;
-  border-top: 2px solid $border-color;
+  background-color: global.$navbar-bg-color;
+  color: global.$text-color;
+  border-top: 2px solid global.$border-color;
 }

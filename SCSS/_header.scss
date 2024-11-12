@@ -1,11 +1,11 @@
-@import 'global';
+@use 'global';
 
 .header {
   padding: 50px;
   text-align: center;
-  background-color: $navbar-bg-color;
-  border-bottom: 2px solid $border-color;
-  color: $text-color;
+  background-color: global.$navbar-bg-color;
+  border-bottom: 2px solid global.$border-color;
+  color: global.$text-color;
 
   img {
     max-width: 100%;

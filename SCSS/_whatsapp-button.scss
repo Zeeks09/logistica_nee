@@ -1,4 +1,4 @@
-@import 'global';
+@use 'global';
 
 .whatsapp-button {
   position: fixed;
@@ -6,7 +6,7 @@
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: $button-bg-color;
+  background-color: global.$button-bg-color;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
   animation: bounce 2s infinite;
 
   &:hover {
-    background-color: $button-hover-color;
+    background-color: global.$button-hover-color;
   }
 
   img {
