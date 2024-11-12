@@ -1,12 +1,19 @@
-body {
-    background-color: #534D85;
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: #413973;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #909292;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+
+  &:hover {
     color: #A9A59F;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
   }
-  
-  h1, h2 {
-    color: #A9A59F;
-    text-align: center;
-  }
+}

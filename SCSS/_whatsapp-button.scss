@@ -1,12 +1,34 @@
-body {
-    background-color: #534D85;
-    color: #A9A59F;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: bounce 2s infinite;
+
+  &:hover {
+    background-color: #20B955;
   }
-  
-  h1, h2 {
-    color: #A9A59F;
-    text-align: center;
+
+  img {
+    width: 60%;
+    height: 60%;
   }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}

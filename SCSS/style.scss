@@ -1,7 +1,7 @@
-@import 'global';
-@import 'navbar';
-@import 'header';
-@import 'main-content';
-@import 'form';
-@import 'footer';
-@import 'whatsapp-button';
+@use 'footer';
+@use 'form';
+@use 'global';
+@use 'header';
+@use 'main-content';
+@use 'navbar';
+@use 'whatsapp-button';
