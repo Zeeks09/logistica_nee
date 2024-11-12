@@ -1,16 +1,3 @@
-body {
-  background-color: #534D85;
-  color: #A9A59F;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2 {
-  color: #A9A59F;
-  text-align: center;
-}
-
 footer {
   text-align: center;
   padding: 15px;
@@ -31,9 +18,7 @@ form {
   gap: 15px;
 }
 
-form input,
-form textarea,
-form button {
+form input, form textarea, form button {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #6D65A6;
@@ -52,6 +37,19 @@ form button:hover {
   background-color: #5c4f96;
 }
 
+body {
+  background-color: #534D85;
+  color: #A9A59F;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #A9A59F;
+  text-align: center;
+}
+
 .header {
   padding: 50px;
   text-align: center;
@@ -59,7 +57,6 @@ form button:hover {
   border-bottom: 2px solid #6D65A6;
   color: #A9A59F;
 }
-
 .header img {
   max-width: 100%;
   height: auto;
@@ -75,7 +72,6 @@ form button:hover {
     opacity: 1;
   }
 }
-
 .main-content {
   padding: 20px;
   max-width: 800px;
@@ -98,7 +94,6 @@ form button:hover {
   border-radius: 5px;
   transition: color 0.3s ease;
 }
-
 .navbar a:hover {
   color: #A9A59F;
 }
@@ -119,11 +114,9 @@ form button:hover {
   transition: background-color 0.3s ease;
   animation: bounce 2s infinite;
 }
-
 .whatsapp-button:hover {
   background-color: #20B955;
 }
-
 .whatsapp-button img {
   width: 60%;
   height: 60%;
@@ -137,3 +130,5 @@ form button:hover {
     transform: translateY(-5px);
   }
 }
+
+/*# sourceMappingURL=style.css.map */
