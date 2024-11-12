@@ -6,33 +6,7 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-family: 'Helios', sans-serif;
-  font-weight: 700;
-  font-size: 2.2rem;
+h1, h2 {
   color: #A9A59F;
   text-align: center;
-
-  @media (max-width: 768px) {
-    font-size: 1.8rem;
-  }
-}
-
-h2 {
-  font-family: 'Helios', sans-serif;
-  font-weight: 700;
-  color: #A9A59F;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-}
-
-p {
-  color: #A9A59F;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 10px 0;
 }
