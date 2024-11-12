@@ -1,4 +1,4 @@
-@use './variables';
+// Eliminar la línea de `@use 'variables'` y ajustar el resto de las importaciones
 @use './mixins';
 @use './reset';
 @use './header';
