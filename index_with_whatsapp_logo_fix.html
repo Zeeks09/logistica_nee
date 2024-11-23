@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&E Logistica</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* Base styles for consistent design */
+        body {
+            background-color: #534D85;
+            color: #A9A59F;
+            font-family: 'Helios', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, p, label {
+            color: #A9A59F;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            background-color: #413973;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #909292;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: color 0.5s ease;
+        }
+
+        .navbar a:hover {
+            color: #A9A59F;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            z-index: 1000;
+        }
+
+        .whatsapp-button img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .form-section {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 428px) { /* iPhone 13 Pro Max width */
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .navbar a {
+                font-size: 12px;
+            }
+
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>N&E Logistica</h1>
+</header>
+
+<nav class="navbar">
+    <a href="Envios.html">Envios</a>
+    <a href="Mision.html">Misión</a>
+    <a href="Gps.html">GPS</a>
+    <a href="Comentarios.html">Comentarios</a>
+</nav>
+
+<main class="main-content">
+    <section>
+        <h2>Envios a Neuquén en 24hs</h2>
+        <p>Unimos desde el Valle hasta los volcanes, asegurando envíos rápidos y seguros.</p>
+    </section>
+
+    <section class="form-section">
+        <h3>Cotiza tu Envío</h3>
+        <form action="">
+            <label for="origen">Origen</label>
+            <input type="text" id="origen" placeholder="Selecciona tu localidad">
+
+            <label for="destino">Destino</label>
+            <input type="text" id="destino" placeholder="Selecciona tu localidad">
+        </form>
+    </section>
+
+    <section>
+        <h3>Seguí tu envío</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.9537363155048!3d-37.816279442021614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d47f7e14431%3A0x2b07ba4b8c9e2e0!2sFederation%20Square%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1604095060704!5m2!1sen!2sus" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0">
+        </iframe>
+    </section>
+</main>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+</body>
+</html>
