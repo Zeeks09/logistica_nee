@@ -1,3 +1,36 @@
-$(document).ready(function () {
-    console.log("Proyecto cargado correctamente");
+// Validar el número de envío
+function validarNumeroEnvio() {
+    const trackingInput = document.getElementById('tracking');
+    if (trackingInput.value === '') {
+        alert('Por favor, ingresa un número de envío.');
+    } else {
+        alert('Buscando tu envío...');
+    }
+}
+
+// Confirmación de comentarios
+function confirmarComentario() {
+    const nombreInput = document.getElementById('name');
+    const comentarioInput = document.getElementById('comments');
+    const estrellasSeleccionadas = document.querySelector('input[name="rating"]:checked');
+
+    if (!nombreInput.value || !comentarioInput.value || !estrellasSeleccionadas) {
+        alert('Por favor, completa todos los campos antes de enviar.');
+    } else {
+        alert(`¡Gracias por tu comentario, ${nombreInput.value}!`);
+    }
+}
+
+// Animación en botones
+document.addEventListener('DOMContentLoaded', () => {
+    const botones = document.querySelectorAll('button');
+    botones.forEach(boton => {
+        boton.addEventListener('mouseover', () => {
+            boton.style.backgroundColor = '#28A745'; // Verde
+            boton.style.transition = 'background-color 1s';
+        });
+        boton.addEventListener('mouseout', () => {
+            boton.style.backgroundColor = '#413973'; // Violeta original
+        });
+    });
 });
